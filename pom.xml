@@ -65,12 +65,4 @@
     <compileTarget>11</compileTarget>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>sonatype</id>
-      <url>https://oss.sonatype.org/content/repositories/releases/</url>
-<!--      <url>https://oss.sonatype.org/content/groups/public/</url>-->
-    </repository>
-  </repositories>
-
 </project>
