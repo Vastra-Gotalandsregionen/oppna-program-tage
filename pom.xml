@@ -60,7 +60,7 @@
 
   <properties>
     <spring.fw.version>4.3.26.RELEASE</spring.fw.version>
-    <liferay.version>7.2.1</liferay.version>
+    <liferay.version>7.4.3.48</liferay.version>
     <compileSource>11</compileSource>
     <compileTarget>11</compileTarget>
   </properties>
