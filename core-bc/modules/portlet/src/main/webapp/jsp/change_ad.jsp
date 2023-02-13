@@ -31,7 +31,7 @@
 <c:if test="${config.useInternalResources}">
 	<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css")%>"/>
 	<script src="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/jquery/jquery-1.8.2.js") %>" type="text/javascript"></script>
-	<script src="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/js/photo_handling.js?t=10") %>" type="text/javascript"></script>
+	<script src="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/js/photo_handling.js?t=11") %>" type="text/javascript"></script>
 	<script src="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/js/fileuploader.js") %>" type="text/javascript"></script>
 	<link rel="stylesheet" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/fileuploader.css") %>" type="text/css" />
 </c:if>

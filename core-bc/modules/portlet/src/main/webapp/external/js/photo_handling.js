@@ -73,6 +73,7 @@ function initFileUploader(loadingImage) {
 		action: window.urlConfig.uploadUrl,
 		debug: false,
 		disableDefaultDropzone: true,
+		forceMultipart: true,
 		maxConnections: 1,
 		stopOnFirstInvalidFile: false,
 		sizeLimit: 8388608,
