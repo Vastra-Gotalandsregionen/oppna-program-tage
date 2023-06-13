@@ -19,7 +19,7 @@
 %><portlet:renderURL var="cancelUrl"/><%
 %>
 
-<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css")%>"/>
+<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css?r=3")%>"/>
 
 <script type="text/javascript">
 	window.urlConfig = {

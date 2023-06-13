@@ -7,7 +7,7 @@
 %><portlet:resourceURL id="thumbnail" cacheability="cacheLevelFull" var="thumbnailUrl"/><%
 %><portlet:defineObjects/>
 
-<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css")%>"/>
+<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css?r=3")%>"/>
 
 <div id="content-primary" class="cf clearfix" role="main">
 	<p class="back-link"><a class="btn btn-default" href="<portlet:renderURL/>">Tillbaka</a></p>
@@ -72,7 +72,7 @@
 								<a href="${expireAdUrl}" class="btn btn-primary">Sätt som utgången</a>
 							</c:if>
 							<c:if test="${!ad.published}">
-								<a href="${republishAdUrl}" class="btn btn-primary">Återpublicera</a>
+								<a class="btn btn-primary disabled">Återpublicera</a>
 							</c:if>
 						</div>
 					</div>

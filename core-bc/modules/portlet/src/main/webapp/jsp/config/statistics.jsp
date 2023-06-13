@@ -6,7 +6,7 @@
 %><%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %><%
 %><portlet:defineObjects/>
 
-<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css")%>"/>
+<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css?r=3")%>"/>
 
 <div id="content-primary" class="cf clearfix" role="main">
 	<p class="back-link"><a class="btn btn-default" href="<portlet:renderURL/>">Tillbaka</a></p>

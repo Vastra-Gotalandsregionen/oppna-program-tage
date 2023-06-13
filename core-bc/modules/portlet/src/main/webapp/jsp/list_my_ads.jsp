@@ -15,7 +15,7 @@
 
 <c:if test="${config.useInternalResources}">
 	<script src="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/jquery/jquery-1.8.2.js") %>" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css")%>"/>
+    <link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css?r=3")%>"/>
 </c:if>
 
 <div id="content-primary" class="cf clearfix" role="main">
@@ -67,7 +67,7 @@
 	</form:form>
 	<h2>
 		<span id="headerTitle">Mina annonser</span>
-		<form:form cssStyle="float: right" action="${publishDraftsUrl}"><button class="btn btn-primary" type="submit">Publicera alla utkast</button></form:form>
+		<form:form cssStyle="float: right" action=""><button class="btn btn-primary" type="submit" disabled="disabled">Publicera alla utkast</button></form:form>
 	</h2>
 	<c:if test="${fn:length(ads.list) gt 0}">
 		<ul class="inventory-listing">

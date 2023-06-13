@@ -13,7 +13,7 @@
 <c:if test="${config.useInternalResources}">
 	<script src="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/jquery/jquery-1.8.2.js") %>" type="text/javascript"></script>
 	<script src="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/js/tage.js") %>" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css")%>"/>
+    <link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css?r=3")%>"/>
 </c:if>
 
 <portlet:renderURL var="backUrl">
@@ -39,14 +39,14 @@
 						<portlet:actionURL name="performRepublishing" var="publishDraftUrl">
 							<portlet:param name="advertisementId" value="${advertisement.id}"/>
 						</portlet:actionURL>
-						<a href="${publishDraftUrl}" class="btn btn-primary">Publicera utkast</a>
+						<a class="btn btn-primary disabled">Publicera utkast</a>
 					</c:if>
 					<c:if test="${not (advertisement.status eq 'DRAFT')}">
 						<portlet:renderURL var="republishAdUrl">
 							<portlet:param name="page" value="republishAd"/>
 							<portlet:param name="advertisementId" value="${advertisement.id}"/>
 						</portlet:renderURL>
-						<a href="${republishAdUrl}" class="btn btn-primary">Återpublicera</a>
+						<a class="btn btn-primary disabled">Återpublicera</a>
 					</c:if>
 				</c:if>
 				<portlet:actionURL name="loadAd" var="changeAdUrl">
@@ -60,7 +60,7 @@
 					<portlet:param name="page" value="createAd"/>
 					<portlet:param name="copyAdvertisementId" value="${advertisement.id}"/>
 				</portlet:renderURL>
-				<a class="btn btn-primary" href="${copyAd}">Kopiera till ny annons</a>
+				<a class="btn btn-primary disabled">Kopiera till ny annons</a>
 			</c:if>
 
 			<c:if test="${userId eq advertisement.creatorUid}">
@@ -137,14 +137,14 @@
 							<portlet:actionURL name="performRepublishing" var="publishDraftUrl">
 								<portlet:param name="advertisementId" value="${advertisement.id}"/>
 							</portlet:actionURL>
-							<a href="${publishDraftUrl}" class="btn btn-primary">Publicera utkast</a>
+							<a class="btn btn-primary disabled">Publicera utkast</a>
 						</c:if>
 						<c:if test="${not (advertisement.status eq 'DRAFT')}">
 							<portlet:renderURL var="republishAdUrl">
 								<portlet:param name="page" value="republishAd"/>
 								<portlet:param name="advertisementId" value="${advertisement.id}"/>
 							</portlet:renderURL>
-							<a href="${republishAdUrl}" class="btn btn-primary">Återpublicera</a>
+							<a class="btn btn-primary disabled">Återpublicera</a>
 						</c:if>
                     </c:if>
                     <portlet:actionURL name="loadAd" var="changeAdUrl">
@@ -158,7 +158,7 @@
 						<portlet:param name="page" value="createAd"/>
 						<portlet:param name="copyAdvertisementId" value="${advertisement.id}"/>
 					</portlet:renderURL>
-					<a class="btn btn-primary" href="${copyAd}">Kopiera till ny annons</a>
+					<a class="btn btn-primary disabled">Kopiera till ny annons</a>
 				</c:if>
 
 				<c:if test="${userId eq advertisement.creatorUid}">

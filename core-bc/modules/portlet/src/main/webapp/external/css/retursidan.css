@@ -1,3 +1,13 @@
+html a.btn.disabled {
+    pointer-events: inherit;
+    cursor: not-allowed;
+}
+
+html a.btn-primary:not([href]):not([tabindex]) {
+    color: #fff;
+    text-decoration: none;
+}
+
 form.form-general div.row {
     display: block;
     margin-left: 0;

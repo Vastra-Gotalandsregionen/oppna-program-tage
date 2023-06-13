@@ -10,12 +10,12 @@
 <c:if test="${config.useInternalResources}">
     <script src="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/jquery/jquery-1.8.2.js") %>" type="text/javascript"></script>
 </c:if>
-<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css")%>"/>
+<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css?r=3")%>"/>
 
 <div id="m-requested-items" class="m m-link-list">
 	<div class="m-h clearfix content-header">
 		<h2>Efterlysningar</h2>
-        <a href="${createRequestUrl}" class="btn btn-primary">Skapa</a>
+        <a class="btn btn-primary disabled">Skapa</a>
 	</div>
 	<div class="m-c">
 		<c:if test="${fn:length(requests) gt 0}">

@@ -14,13 +14,13 @@
 
 <c:if test="${config.useInternalResources}">
 	<script src="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/jquery/jquery-1.8.2.js") %>" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css?a=b")%>"/>
+    <link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css?r=3")%>"/>
 </c:if>
 
 <div id="content-primary" class="cf clearfix" role="main">
 	<div class="content-header cf clearfix">
 		<h1>Tage</h1>
-        <a href="${createAdUrl}" class="btn btn-primary">Lägg in annons</a>
+        <a class="btn btn-primary disabled">Lägg in annons</a>
         <a href="${listMyAdsUrl}" class="btn btn-primary">Mina annonser</a>
 	</div>
 	<p>Här kan du annonsera ut överblivna möbler och utrustning som du vill skänka för återanvändning till andra verksamheter inom VGR. Du kan även efterlysa möbler och utrustning din verksamhet har behov av. Det kostar inget att annonsera på Tage.</p>

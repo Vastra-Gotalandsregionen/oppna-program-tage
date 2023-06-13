@@ -11,7 +11,7 @@
 %><portlet:renderURL var="cancelUrl"/><%
 %><portlet:defineObjects/>
 
-<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css")%>"/>
+<link rel="stylesheet" type="text/css" href="<%= renderResponse.encodeURL(renderRequest.getContextPath() + "/external/css/retursidan.css?r=3")%>"/>
 
 <%
 	org.springframework.validation.BindingResult bindingResult =
